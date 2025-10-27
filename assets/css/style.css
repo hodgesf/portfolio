@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary: #12bdff;
+  --primary-hover: #0c8ec2;
+  --dark-primary: #1b1f24;
+  --accent: #12bdff;
+  --card-bg: #22282f;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  color: #fff;
+}
+
+/* Dark outlined button */
+.btn-dark-outlined {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-dark-outlined:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* Ensure anchor links inside buttons inherit correct colors */
+.btn a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.btn-dark-outlined a {
+  color: inherit;
+}
+
+.btn-dark-outlined:hover a {
+  color: #fff;
+}
+
+
+/* Social Icons — clean and modern outlined style */
+ul.social-icons {
+  display: flex;
+  gap: 15px;
+  list-style: none;       /* removes the bullet points */
+  padding: 0;
+  margin: 25px 0;
+}
+
+.social-icons li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.social-icons li a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons li:hover {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.social-icons li:hover a {
+  color: var(--dark-primary);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-primary);
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--dark-primary);
+  padding: 20px 40px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+header .logo {
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin-left: 25px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: var(--primary);
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 10%;
+  background-color: var(--dark-primary);
+  color: #fff;
+}
+
+.hero-section__title {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-section__title span {
+  color: var(--primary);
+}
+
+.hero-section__desc {
+  color: #c4c4c4;
+  max-width: 550px;
+}
+
+.hero-img img {
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 0 25px rgba(18, 189, 255, 0.3);
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--dark-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-dark-outlined {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-dark-outlined:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10%;
+  background-color: #22282f;
+  gap: 60px;
+}
+
+.about-img img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  box-shadow: 0 0 25px rgba(18, 189, 255, 0.3);
+  object-fit: cover;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.about-content span {
+  color: var(--primary);
+}
+
+.about-content p {
+  color: #d0d0d0;
+  font-size: 15px;
+}
+
+/* === Qualification / Timeline Section === */
+.qualification.section {
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: 1rem;
+  color: #c4c4c4;
+  margin-bottom: 40px;
+}
+
+/* Timeline container */
+.qualification__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Add the vertical line */
+.qualification__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: var(--primary);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* Each timeline entry */
+.qualification__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Left / right text alignment */
+.qualification__data:nth-child(odd) div:first-child {
+  text-align: right;
+}
+.qualification__data:nth-child(even) div:last-child {
+  text-align: left;
+}
+
+/* Dot and line styling */
+.qualification__rounder {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.qualification__line {
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: var(--primary);
+  opacity: 0.5;
+  margin: 0 auto;
+}
+
+/* Typography */
+.qualification__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.qualification__subtitle {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.qualification__calendar {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 3px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .qualification__container::before {
+    left: 12px;
+  }
+  .qualification__data {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .qualification__data div:nth-child(2) {
+    display: flex;
+    align-items: center;
+  }
+  .qualification__line {
+    display: none;
+  }
+  .qualification__rounder {
+    margin-bottom: 10px;
+  }
+}
+
+
+/* Projects Section */
+.projects-section {
+  background: var(--dark-primary);
+  padding: 70px 10%;
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.projects-section h2 span {
+  color: var(--primary);
+}
+
+.projects-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.projects-card-box {
+  background-color: #22282f;
+  border-radius: 8px;
+  padding: 25px;
+  width: 30%;
+  transition: 0.4s;
+}
+
+.projects-card-box:hover {
+  box-shadow: 0 0 20px rgba(18, 189, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.projects-card-box__icons i {
+  font-size: 30px;
+  border: 1px solid var(--primary);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.projects-card-box__desc h4 {
+  margin: 15px 0 8px;
+}
+
+.projects-card-box__desc p {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #22282f;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-section h2 span {
+  color: var(--primary);
+}
+
+.contact-section input,
+.contact-section textarea {
+  background-color: #c4c4c4;
+  
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  width: 300px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+  color: #555; /* darker gray for readability */
+  opacity: 1; /* ensures consistent placeholder visibility */
+}
+
+.contact__github {
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--dark-primary);
+  padding: 20px 0;
+  color: gray;
+  font-size: 14px;
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* Resume Section */
+.resume-section {
+  background: #22282f;
+  color: #fff;
+  padding: 70px 10%;
+  text-align: center;
+}
+
+.resume-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.resume-section h2 span {
+  color: var(--primary);
+}
+
+.resume-intro {
+  color: #c4c4c4;
+  margin-bottom: 25px;
+}
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.resume-container iframe {
+  width: 80%;
+  height: 650px;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 20px rgba(18, 189, 255, 0.2);
+}
+
+.resume-download a {
+  color: var(--dark-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.resume-download .btn {
+  margin-top: 10px;
+}
