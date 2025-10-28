@@ -505,3 +505,50 @@ footer a {
 .resume-download .btn {
   margin-top: 10px;
 }
+/* ===== Responsive Header Navigation ===== */
+
+/* Desktop: show nav, hide hamburger */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+/* ===== Mobile Navigation ===== */
+@media (max-width: 768px) {
+  /* Show hamburger, hide nav by default */
+  .menu-toggle {
+    display: block;
+  }
+
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-primary);
+    width: 100%;
+    position: absolute;
+    top: 70px; /* adjust if your header height changes */
+    left: 0;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  /* When header has 'active' class (menu open), show nav */
+  header.active nav ul {
+    display: flex;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+}
