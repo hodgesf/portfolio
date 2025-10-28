@@ -170,8 +170,14 @@ header ul li a:hover {
 
 .hero-img img {
   border-radius: 15px;
-  width: 320px;
-  box-shadow: 0 0 25px rgba(18, 189, 255, 0.3);
+  width: 420px; /* was 320px — increases visual presence */
+  max-width: 100%;
+  box-shadow: 0 0 35px rgba(18, 189, 255, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.hero-img img:hover {
+  transform: scale(1.03);
 }
 
 /* Buttons */
@@ -333,27 +339,6 @@ header ul li a:hover {
   font-size: 0.8rem;
   color: #888;
   margin-top: 3px;
-}
-
-/* Mobile view */
-@media (max-width: 768px) {
-  .qualification__container::before {
-    left: 12px;
-  }
-  .qualification__data {
-    grid-template-columns: 1fr;
-    text-align: left;
-  }
-  .qualification__data div:nth-child(2) {
-    display: flex;
-    align-items: center;
-  }
-  .qualification__line {
-    display: none;
-  }
-  .qualification__rounder {
-    margin-bottom: 10px;
-  }
 }
 
 
@@ -523,7 +508,9 @@ header nav ul {
   gap: 25px;
 }
 
-/* ===== Mobile Navigation ===== */
+/* ===== Mobile Navigation & Responsiveness ===== */
+
+/* Tablet & small desktop adjustments */
 @media (max-width: 768px) {
   /* Show hamburger, hide nav by default */
   .menu-toggle {
@@ -550,5 +537,159 @@ header nav ul {
 
   header nav ul li {
     margin: 10px 0;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Logo color fix */
+  header .logo,
+  header .logo:visited,
+  header .logo:active {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  header .logo:hover {
+    color: var(--primary-hover);
+  }
+
+  /* Center social icons */
+  ul.social-icons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Hide entire timeline section on mobile */
+  .qualification.section {
+    display: none !important;
+  }
+}
+
+/* Small phone optimizations */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 5%;
+  }
+
+  header {
+    padding: 12px 20px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 5% 60px;
+  }
+
+  .hero-section__title {
+    font-size: 32px;
+  }
+
+  .hero-section__desc {
+    font-size: 14px;
+    margin: 0 auto 20px;
+  }
+
+  .hero-img img {
+    width: 220px;
+    margin-top: 20px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-img img {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* Hide timeline entirely on phones too */
+  .qualification.section {
+    display: none !important;
+  }
+
+  .projects-card-box {
+    width: 100%;
+  }
+
+  .resume-container iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  .contact-section input,
+  .contact-section textarea {
+    width: 90%;
+  }
+}
+
+/* ===== Publications & Presentations Section ===== */
+.publications-section {
+  background-color: #22282f;
+  color: #fff;
+  padding: 70px 10%;
+  text-align: left;
+}
+
+.publications-section h2 {
+  color: var(--primary);
+  font-size: 28px;
+  margin: 40px 0 20px;
+  position: relative;
+}
+
+.publications-section h2 span {
+  border-left: 8px solid var(--primary);
+  padding-left: 10px;
+}
+
+.publication,
+.presentation {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.publication p,
+.presentation p {
+  color: #d0d0d0;
+  font-size: 15px;
+}
+
+.publication a,
+.presentation a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.publication a:hover,
+.presentation a:hover {
+  text-decoration: underline;
+  color: var(--primary-hover);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .publications-section {
+    padding: 50px 8%;
+  }
+
+  .publications-section h2 {
+    font-size: 24px;
+  }
+
+  .publication p,
+  .presentation p {
+    font-size: 14px;
   }
 }

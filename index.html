@@ -34,22 +34,16 @@
         <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#timeline">Journey</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     </header>
 
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const header = document.querySelector('header');
-        menuToggle.addEventListener('click', () => {
-            header.classList.toggle('active');
-        });
 
-    </script>
 
   
 
@@ -88,7 +82,7 @@
       </div>
 
       <div class="hero-img">
-        <img src="assets/img/IMG_0422.jpeg" alt="Portrait of Frankie Hodges" width="350">
+        <img src="assets/img/radiant_interview.png" alt="Portrait of Frankie Hodges" width="350">
       </div>
     </section>
 
@@ -286,6 +280,50 @@
     </div>
     </section>
 
+    <section class="publications-section" id="publications">
+        <h2><span>Publications</span></h2>
+
+        <div class="publication">
+            <p>
+            <strong>F.M. Hodges</strong>, et al., 
+            “Using AI to Improve Diagnosis and Treatment of Rare Diseases: A Chat Agent for Equitable and Accessible Healthcare,” 
+            <em>Artificial Intelligence in Medicine (AIME)</em>, LNCS vol. 15735, Springer, 2025. 
+            <a href="https://doi.org/10.1007/978-3-031-95841-0_35" target="_blank" rel="noopener noreferrer">
+                doi:10.1007/978-3-031-95841-0_35
+            </a>
+            </p>
+        </div>
+
+        <div class="publication">
+            <p>
+            <strong>F.M. Hodges</strong>, et al., 
+            “White Paper on Radiant,” Oregon State University, 2025. 
+            <a href="https://radiant.rtx.ai/whitepaper" target="_blank" rel="noopener noreferrer">
+                radiant.rtx.ai/whitepaper
+            </a>
+            </p>
+        </div>
+
+        <h2><span>Presentations</span></h2>
+
+        <div class="presentation">
+            <p>
+            <strong>Poster Presentation:</strong> 
+            <em>Radiant: An Agentic RAG System for Rare Diseases.</em> 
+            Presented at Artificial Intelligence in Medicine, Pavia, Italy, 2025.
+            </p>
+        </div>
+
+        <div class="presentation">
+            <p>
+            <strong>Demonstrative Presentation:</strong> 
+            <em>Radiant.</em> 
+            Presented at Stanford & Research to the People Rare Disease Hackathon, San Francisco, California, 2024.
+            </p>
+        </div>
+    </section>
+
+
     <!-- Projects Section -->
     <section class="projects-section" id="projects">
       <h2>My <span>Projects</span></h2>
@@ -387,6 +425,23 @@
 
   <!-- JS -->
   <script src="./assets/js/script.js"></script>
-  
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const header = document.querySelector('header');
+    const navLinks = document.querySelectorAll('header nav ul li a');
+
+    // toggle menu open/close
+    menuToggle.addEventListener('click', () => {
+        header.classList.toggle('active');
+    });
+
+    // close menu when a nav link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+        header.classList.remove('active');
+        });
+    });
+  </script>
+
 </body>
 </html>
