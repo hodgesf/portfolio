@@ -285,24 +285,26 @@ header ul li a:hover {
   z-index: 0;
 }
 
-/* Each timeline entry */
 .qualification__data {
   display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  align-items: center;
-  column-gap: 1.5rem;
+  grid-template-columns: 1fr 2px 1fr; /* match the line’s width exactly */
+  align-items: start;
+  column-gap: 3rem;
   margin-bottom: 2rem;
   position: relative;
   z-index: 1;
 }
 
-/* Left / right text alignment */
-.qualification__data:nth-child(odd) div:first-child {
-  text-align: right;
+/* Make sure the middle column aligns visually with the global line */
+.qualification__data > div:nth-of-type(2) {
+  justify-self: center;
 }
-.qualification__data:nth-child(even) div:last-child {
-  text-align: left;
-}
+
+
+
+.qualification__data > div:first-of-type {text-align: right;}
+.qualification__data > div:last-of-type {text-align: left;}
+
 
 /* Dot and line styling */
 .qualification__rounder {
@@ -333,6 +335,8 @@ header ul li a:hover {
 .qualification__subtitle {
   font-size: 0.85rem;
   color: #aaa;
+  display: block;
+  margin: 2px 0;
 }
 
 .qualification__calendar {
@@ -340,6 +344,7 @@ header ul li a:hover {
   color: #888;
   margin-top: 3px;
 }
+
 
 
 /* Projects Section */
@@ -393,6 +398,25 @@ header ul li a:hover {
   font-size: 14px;
   color: #c4c4c4;
 }
+
+.projects-card-box {
+  text-align: center;              /* centers text */
+  flex-direction: column;          /* stack icon, text, button */
+  align-items: center;             /* center them horizontally */
+}
+
+.projects-card-box__icons i {
+  margin-bottom: 12px;
+}
+
+.projects-card-box__desc {
+  flex-grow: 1;                    /* allows text to take available space */
+}
+
+.projects-card-box__buttons {
+  margin-top: 15px;
+}
+
 
 /* Contact Section */
 .contact-section {
