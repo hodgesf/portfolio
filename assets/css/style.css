@@ -230,6 +230,8 @@ header ul li a:hover {
   gap: 60px;
 }
 
+
+
 .about-img img {
   width: 260px;
   height: 260px;
@@ -253,6 +255,25 @@ header ul li a:hover {
   font-size: 15px;
 }
 
+.about-content a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.about-content a:visited {
+  color: var(--primary);
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
+
+.about-content a:active {
+  font-weight: bold;
+  color: var(--primary);
+}
+
 /* === Qualification / Timeline Section === */
 .qualification.section {
   text-align: center;
@@ -271,6 +292,25 @@ header ul li a:hover {
   font-size: 1rem;
   color: #c4c4c4;
   margin-bottom: 40px;
+}
+
+/* Toggle Filter in Subtitle */
+.toggle-filter {
+  cursor: pointer;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  color: #c4c4c4;
+}
+
+.toggle-filter:hover {
+  color: var(--primary-hover);
+}
+
+.toggle-filter.active {
+  border-bottom-color: var(--primary);
+  color: var(--primary) !important;
+  font-weight: 600;
 }
 
 /* Timeline container */
@@ -315,6 +355,32 @@ header ul li a:hover {
   z-index: 2;
 }
 
+.qualification__data {
+  position: relative;
+}
+
+.qualification__data.top .qualification__content::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 35px;
+  border-left: 2px dotted var(--primary);
+}
+
+.qualification__data.bottom .qualification__content::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 35px;
+  border-left: 2px dotted var(--primary);
+}
+
 .qualification__content {
   position: relative;
 }
@@ -325,6 +391,17 @@ header ul li a:hover {
 
 .qualification__data:nth-child(even) .qualification__content {
   transform: translateY(90px);
+}
+
+/* Hide items by default when filtered */
+.qualification__data[data-category] {
+  display: none;
+}
+
+/* Show when matching filter */
+.qualification__container.filter-academic .qualification__data[data-category="academic"],
+.qualification__container.filter-professional .qualification__data[data-category="professional"] {
+  display: flex;
 }
 
 
