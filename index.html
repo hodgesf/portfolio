@@ -3,569 +3,463 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="icon" href="./assets/img/favicon.png">
-  <title>Frankie Hodges - Portfolio</title>
 
-  <!-- Font Awesome 6.5.2 (CDN) -->
+  <title>Frankie Hodges — Biomedical AI &amp; Knowledge Graph Consulting</title>
+  <meta name="description"
+    content="Clinician-turned-AI-researcher building knowledge-graph-grounded LLM systems for biomedical teams: retrieval-augmented generation, evaluation and safety engineering, and biomedical knowledge graphs.">
+  <link rel="canonical" href="https://hodgesf.github.io/portfolio/">
 
+  <!-- Social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Frankie Hodges — Biomedical AI &amp; Knowledge Graph Consulting">
+  <meta property="og:description"
+    content="I build biomedical AI that shows its work. Grounded LLM systems, evaluation &amp; safety engineering, and knowledge graph engineering — by a clinician-turned-AI-researcher.">
+  <meta property="og:url" content="https://hodgesf.github.io/portfolio/">
+  <meta property="og:image" content="https://hodgesf.github.io/portfolio/assets/img/head_shot.jpeg">
+  <meta name="twitter:card" content="summary">
 
-  <!-- Font Awesome icons -->
-  <script src="https://kit.fontawesome.com/a9cdbedf57.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
 
-  <!-- Styling CSS -->
-  <link rel="stylesheet" id="themeStylesheet" href="./assets/css/style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Frankie Hodges",
+    "alternateName": "F.M. Hodges",
+    "jobTitle": "Biomedical AI & Knowledge Graph Consultant",
+    "description": "Clinician-turned-AI-researcher building knowledge-graph-grounded LLM systems for biomedical teams.",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Oregon State University" },
+    "url": "https://hodgesf.github.io/portfolio/",
+    "sameAs": [
+      "https://www.linkedin.com/in/hodgesfm/",
+      "https://github.com/hodgesf"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="./index.html">Frankie&nbsp;Hodges<span class="logo-dot" aria-hidden="true"></span></a>
 
-  <header>
-    <div class="logo">
-        <a href="./index.html"><span>Frankie Hodges</span></a>
-    </div>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span aria-hidden="true">&#9776;</span>
+      </button>
 
-    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-
-    <nav>
+      <nav class="site-nav" aria-label="Main">
         <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#timeline">Journey</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="nav-cv" href="./assets/resume/FrankHodgesResume.pdf" download>CV&nbsp;&darr;</a></li>
         </ul>
-    </nav>
-    </header>
+      </nav>
+    </div>
+  </header>
 
+  <main id="main">
 
-
-  
-
-  <main>
-
-    <!-- Hero Section -->
-    <section class="hero-section" id="home">
-      <div>
-        <div>
-          <h4 title="Hello!">Hi,</h4>
-          <h2 class="hero-section__title">I'm <span>Frankie</span></h2>
-          <p class="hero-section__desc">
-            I’m a PhD student working at the intersection of machine learning, bioinformatics, and healthcare, with a focus on rare diseases.
-            My goal is to build transparent, equitable systems that make advanced care more accessible and affordable.”
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Biomedical AI &middot; Knowledge Graphs &middot; LLM Systems</p>
+          <h1>I build biomedical AI<br>that <em>shows its work.</em></h1>
+          <p class="hero-sub">
+            Knowledge-graph-grounded LLM systems for biotech and health-tech teams &mdash;
+            retrieval, evaluation, and safety engineering from someone who has worked both
+            sides: a decade in frontline medicine, now an AI PhD researcher building
+            reasoning systems for NIH&rsquo;s Biomedical Data Translator.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-solid" href="#contact">Start a conversation</a>
+            <a class="btn btn-ghost" href="#work">See the work</a>
+          </div>
+          <p class="hero-proof">
+            562k-chunk clinical corpus &middot; 7.5M-node knowledge graph &middot; AIME&nbsp;2025 &middot; NCATS&nbsp;Translator
           </p>
         </div>
 
-        <ul class="social-icons">
+        <!-- Signature: a treats edge, explained by its path -->
+        <figure class="hero-graph" aria-hidden="true">
+          <svg viewBox="0 0 520 430" role="img">
+            <!-- faint background edges -->
+            <g class="g-edges-faint">
+              <line x1="150" y1="112" x2="252" y2="212" />
+              <line x1="150" y1="112" x2="330" y2="52" />
+              <line x1="330" y1="52" x2="418" y2="128" />
+              <line x1="360" y1="330" x2="252" y2="212" />
+              <line x1="360" y1="330" x2="470" y2="252" />
+              <line x1="470" y1="252" x2="418" y2="128" />
+              <line x1="84" y1="300" x2="150" y2="112" />
+            </g>
+            <!-- mechanistic path: drug → gene → disease -->
+            <g class="g-edges-path">
+              <line x1="84" y1="300" x2="252" y2="212" />
+              <line x1="252" y1="212" x2="418" y2="128" />
+            </g>
+            <!-- predicted treats edge (amber, drawn on load) -->
+            <path class="treats-edge" d="M 84 300 Q 240 380 418 128" fill="none" />
+            <text class="t-label t-amber" x="268" y="330">biolink:treats</text>
+
+            <!-- nodes -->
+            <g class="g-nodes">
+              <circle cx="84" cy="300" r="7" class="node node-path" />
+              <circle cx="252" cy="212" r="7" class="node node-path" />
+              <circle cx="418" cy="128" r="7" class="node node-path" />
+              <circle cx="150" cy="112" r="5" class="node" />
+              <circle cx="330" cy="52" r="5" class="node" />
+              <circle cx="360" cy="330" r="5" class="node" />
+              <circle cx="470" cy="252" r="5" class="node" />
+            </g>
+
+            <!-- node labels -->
+            <text class="t-label" x="30" y="326">CHEBI:45783</text>
+            <text class="t-label" x="262" y="200">NCBIGene:3815</text>
+            <text class="t-label" x="352" y="112">MONDO:0011719</text>
+            <text class="t-label t-faint" x="96" y="100">UniProtKB:P10721</text>
+            <text class="t-label t-faint" x="296" y="38">DOID:9253</text>
+            <text class="t-label t-faint" x="316" y="356">REACT:R-HSA-1643685</text>
+            <text class="t-label t-faint" x="428" y="278">UMLS:C0238198</text>
+          </svg>
+          <figcaption class="graph-caption">a <span>treats</span> edge, explained by its path</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= CREDIBILITY ================= -->
+    <section class="cred" aria-label="Credentials">
+      <div class="wrap cred-row">
+        <div class="cred-item">
+          <strong>NCATS Translator</strong>
+          <span>Contributor, NIH&rsquo;s federated biomedical reasoning program</span>
+        </div>
+        <div class="cred-item">
+          <strong>AIME 2025</strong>
+          <span>Published, Springer LNCS &mdash; AI in Medicine</span>
+        </div>
+        <div class="cred-item">
+          <strong>Ramsey Lab, OSU</strong>
+          <span>PhD researcher, AI &middot; concurrent M.S. in CS</span>
+        </div>
+        <div class="cred-item">
+          <strong>10 years in medicine</strong>
+          <span>Army combat medic &middot; paramedic &middot; Cleveland Clinic &middot; FEMA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <p class="eyebrow">Services</p>
+        <h2 class="section-title">Three ways I can help</h2>
+
+        <div class="services-grid">
+          <article class="service">
+            <h3>Grounded LLM systems</h3>
+            <p>
+              Retrieval-augmented and agentic systems over your biomedical data &mdash;
+              corpus ingest, hybrid retrieval, citation-grade answers, deployment.
+              Built to refuse when the evidence isn&rsquo;t there.
+            </p>
+          </article>
+          <article class="service">
+            <h3>LLM evaluation &amp; safety</h3>
+            <p>
+              Eval harnesses, faithfulness gates, adversarial testing, and PHI
+              safeguards for systems you already run &mdash; with metrics you can put
+              in front of a review board.
+            </p>
+          </article>
+          <article class="service">
+            <h3>Knowledge graph engineering</h3>
+            <p>
+              Ontology mapping, identifier normalization, graph ML, and query
+              services on multi-million-node biomedical graphs &mdash; the plumbing
+              that makes grounding possible.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SELECTED WORK ================= -->
+    <section class="section section-alt" id="work">
+      <div class="wrap">
+        <p class="eyebrow">Selected work</p>
+        <h2 class="section-title">Case studies</h2>
+
+        <!-- Radiant -->
+        <article class="case">
+          <p class="case-role">Sole builder &middot; deployed on AWS &middot; published at AIME 2025</p>
+          <h3>Radiant &mdash; clinical evidence RAG for infectious disease</h3>
+          <p class="case-lede">
+            A decision-support assistant for licensed clinicians that answers dosing,
+            isolation, and treatment questions <strong>only</strong> from curated evidence &mdash;
+            verbatim span citations on every claim, and refusal when the corpus
+            doesn&rsquo;t cover the question.
+          </p>
+          <div class="case-body">
+            <div class="case-text">
+              <p>
+                Built end-to-end: a ~562k-chunk corpus from PMC full text, CDC/WHO/IDSA
+                guidelines, and institutional SOPs behind a license gate; hybrid dense +
+                BM25 retrieval with reranking; a three-tier evidence hierarchy
+                (institutional &rarr; guideline &rarr; research) with explicit concordance
+                verdicts; span-level attribution via the Claude Citations API; and a PHI
+                guard that blocks identifiers <em>before</em> any LLM call. Deployed on AWS
+                behind auth with encrypted secrets, plus an adversarial test suite for
+                prompt injection and dangerous-dose bait.
+              </p>
+            </div>
+            <ul class="case-metrics">
+              <li><span class="metric">0.82 &rarr; 1.00</span> faithfulness on versioned gold-set eval, after a regenerate-then-refuse gate</li>
+              <li><span class="metric">&approx;0.9</span> behavior accuracy</li>
+              <li><span class="metric">32-way</span> concurrent retrieval, zero errors</li>
+              <li><span class="metric">Passed</span> prompt-injection &amp; dosing-bait adversarial suite</li>
+            </ul>
+          </div>
+          <p class="case-tags">Python &middot; FastAPI &middot; Qdrant &middot; Claude &middot; Voyage AI &middot; PubMedBERT &middot; Streamlit &middot; AWS</p>
+          <p class="case-links">
+            <a href="https://radiant.rtx.ai" target="_blank" rel="noopener noreferrer">Live system &nearr;</a>
+            <a href="https://radiant.rtx.ai/whitepaper" target="_blank" rel="noopener noreferrer">White paper &nearr;</a>
+            <a href="https://doi.org/10.1007/978-3-031-95841-0_35" target="_blank" rel="noopener noreferrer">AIME 2025 paper &nearr;</a>
+          </p>
+        </article>
+
+        <!-- RTX / Generic Concepts -->
+        <article class="case">
+          <p class="case-role">Contributor &middot; NIH NCATS Translator &middot; in production</p>
+          <h3>ARAX generic-concepts classifier &mdash; ML inside an NIH reasoning system</h3>
+          <p class="case-lede">
+            Overly generic nodes (&ldquo;protein&rdquo;, &ldquo;disease&rdquo;) were polluting multi-hop
+            reasoning paths in ARAX, the reasoning agent over the 7.5M-node RTX-KG2
+            knowledge graph &mdash; held back only by a hand-maintained blocklist. I replaced
+            it with a learned classifier.
+          </p>
+          <div class="case-body">
+            <div class="case-text">
+              <p>
+                Graph feature extraction and node embeddings over KG2 feed an
+                information-content regressor and an XGBoost classifier; an
+                LLM-in-the-loop active-learning loop on a self-hosted vLLM server grew
+                the labeled set from 11.5k to 127k nodes across four rounds. Validated
+                against the ARAX regression test suite before adoption.
+              </p>
+            </div>
+            <ul class="case-metrics">
+              <li><span class="metric">0.961</span> PR-AUC</li>
+              <li><span class="metric">0.90 / 0.88</span> precision / recall at the deployed threshold</li>
+              <li><span class="metric">21,689</span> candidates triaged by LLM review in 757s (~29/s)</li>
+              <li><span class="metric">11.5k &rarr; 127k</span> labeled nodes via active learning</li>
+            </ul>
+          </div>
+          <p class="case-tags">XGBoost &middot; scikit-learn &middot; vLLM &middot; Qwen 2.5 32B &middot; pandas &middot; RTX-KG2</p>
+          <p class="case-links">
+            <a href="https://github.com/RTXteam/RTX" target="_blank" rel="noopener noreferrer">RTX repository &nearr;</a>
+            <a href="https://arax.ncats.io" target="_blank" rel="noopener noreferrer">ARAX, live &nearr;</a>
+          </p>
+        </article>
+
+        <!-- CCLB -->
+        <article class="case">
+          <p class="case-role">Single-author research &middot; methodology</p>
+          <h3>CCLB &mdash; link prediction that is faithful by construction</h3>
+          <p class="case-lede">
+            When a model proposes a molecular mediator for wet-lab validation, a post-hoc
+            explanation isn&rsquo;t good enough. CCLB trains a hard-gated edge selector
+            <em>jointly</em> with a Neural Bellman-Ford predictor, so every prediction is
+            computed on a sparse subgraph the model is structurally committed to.
+          </p>
+          <div class="case-body">
+            <div class="case-text">
+              <p>
+                Trained on the human subset of the Reasoner Drug Knowledge Graph
+                (856k entities, ~2.7M triples) on DGX H100 hardware. The architecture
+                satisfies all four of Azzolin et&nbsp;al.&rsquo;s (ICLR 2025) conditions for
+                self-interpretable graph models by construction &mdash; audited condition by
+                condition in the paper. Current work extends this line toward
+                query-conditional faithfulness guarantees.
+              </p>
+            </div>
+            <ul class="case-metrics">
+              <li><span class="metric">79%</span> of unconstrained baseline MRR&hellip;</li>
+              <li><span class="metric">~12%</span> &hellip;using this fraction of input edges per query</li>
+              <li><span class="metric">16&times;</span> mean-rank reduction over training (26,395 &rarr; 1,614)</li>
+              <li><span class="metric">4 / 4</span> architectural faithfulness conditions met</li>
+            </ul>
+          </div>
+          <p class="case-tags">PyTorch &middot; NBFNet &middot; straight-through estimators &middot; biomedical KGs</p>
+          <p class="case-links"><span class="case-note">Paper available on request.</span></p>
+        </article>
+
+        <!-- More work -->
+        <h2 class="section-title subhead">More work</h2>
+        <ul class="morework">
           <li>
-            <a href="https://www.linkedin.com/in/hodgesfm/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/RTXteam/PloverDB" target="_blank" rel="noopener noreferrer">PloverDB</a>
+            <span class="mw-role">Maintainer</span>
+            <span class="mw-desc">In-memory graph query service powering Translator knowledge providers &mdash; deployment pipelines, build validation, performance.</span>
           </li>
           <li>
-            <a href="https://instagram.com/frankiehodges_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Translator-CATRAX/stitch-proj" target="_blank" rel="noopener noreferrer">localBabel</a>
+            <span class="mw-role">Author</span>
+            <span class="mw-desc">Biomedical identifier &amp; category normalization into a local SQLite schema; tested, benchmarked, published to PyPI.</span>
           </li>
           <li>
-            <a href="https://github.com/hodgesf" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://uptime.rtx.ai" target="_blank" rel="noopener noreferrer">RTX Uptime Monitor</a>
+            <span class="mw-role">Author</span>
+            <span class="mw-desc">Liveness and latency probes for production reasoning endpoints, with a live dashboard and Slack alerting.</span>
+          </li>
+          <li>
+            <a href="https://github.com/Translator-CATRAX/rare-target" target="_blank" rel="noopener noreferrer">RareTarget</a>
+            <span class="mw-role">Contributor</span>
+            <span class="mw-desc">Knowledge-graph framework for prioritizing intermediate molecular targets in rare disease.</span>
+          </li>
+          <li>
+            <a href="https://github.com/Translator-CATRAX/node-embedder" target="_blank" rel="noopener noreferrer">Node Embedder</a>
+            <span class="mw-role">Author</span>
+            <span class="mw-desc">Embedding pipeline over KG node descriptions enabling semantic search on biomedical relationships.</span>
+          </li>
+          <li>
+            <a href="https://github.com/hodgesf/natural-language-to-query-graph" target="_blank" rel="noopener noreferrer">NL &rarr; Query Graph</a>
+            <span class="mw-role">Author</span>
+            <span class="mw-desc">NLP/NLI pipeline translating natural-language biomedical questions into formal query graphs.</span>
           </li>
         </ul>
-
-        <div class="hero-buttons">
-          <button class="btn btn-dark-outlined">
-            <a href="./assets/resume/FrankHodgesResume.pdf?v=2" download>Download CV</a>
-          </button>
-        </div>
-      </div>
-
-      <div class="hero-img">
-        <img src="assets/img/head_shot.jpeg" alt="Portrait of Frankie Hodges" width="350">
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section" id="about">
-      <div class="about-img">
-        <img src="assets/img/parage.jpeg" alt="Portrait of Frankie Hodges">
-      </div>
+    <!-- ================= PUBLICATIONS ================= -->
+    <section class="section" id="publications">
+      <div class="wrap">
+        <p class="eyebrow">Publications &amp; talks</p>
+        <h2 class="section-title">On the record</h2>
 
-      <div class="about-content">
-        <h4>About Me</h4>
-        <h2>I am a concurrent MSCS & <br><span>PhD Student in Artificial Intelligence</span></h2>
-        <p>
-          I’m finishing my second year as a PhD student at Oregon State University, where I work on machine learning and knowledge graphs for rare disease research and clinical decision support. I’m currently a Graduate Research Assistant in the <a href="https://lab.saramsey.org">Ramsey Lab</a>, where I get to work on some exciting projects. You can read more about those <a href="#projects">below</a>.
-          I’m originally from the Cleveland, Ohio area, and yes, I’m a die-hard Cleveland sports fan and a Buckeye (O-H!). Before grad school, I served as a combat medic in the U.S. Army National Guard and worked in emergency and clinical medicine. That experience made me realize I wanted to impact healthcare at a systems level. During my post-bacc at Oregon State, I discovered I could combine healthcare with programming and problem-solving through computer science, and I haven’t looked back.
-          After graduate school, I hope to continue working in biomedical AI in a research or applied role focused on meaningful, real-world impact. Outside of research, I enjoy cooking, playing with my dog, spending time with friends, and discovering new music.
-        </p>
-      </div>
-    </section>
-
-        <!-- Timeline Section -->
-    <section class="qualification section" id="timeline">
-    <h2 class="section__title">My Journey</h2>
-    <span class="section__subtitle">
-      <span class="toggle-filter active" data-filter="academic">Academic</span>
-      &
-      <span class="toggle-filter" data-filter="professional">Professional</span>
-    </span>
-
-    <div class="qualification__container container">
-
-        <!-- University of Cincinnati (1st academic - odd) -->
-        <div class="qualification__data" data-category="academic">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Started at University of Cincinnati</h3>
-              <span class="qualification__subtitle">Molecular Biology</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> August 2016
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- Ohio State University (2nd academic - even) -->
-        <div class="qualification__data" data-category="academic">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Transferred to Ohio State</h3>
-              <span class="qualification__subtitle">Biology</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> August 2017
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- B.A. in Biology (3rd academic - odd) -->
-        <div class="qualification__data" data-category="academic">
-          <div class="qualification__content">
-              <h3 class="qualification__title">B.A. in Biology</h3>
-              <span class="qualification__subtitle">The Ohio State University</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> May 2020
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- Post-Bacc Program Start (4th academic - even) -->
-        <div class="qualification__data" data-category="academic">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Started Post-Bacc Program</h3>
-              <span class="qualification__subtitle">Oregon State University</span>
-              <span class="qualification__subtitle">B.S. in Computer Science</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> April 2023
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- B.S. in Computer Science (5th academic - odd) -->
-        <div class="qualification__data" data-category="academic">
-          <div class="qualification__content">
-              <h3 class="qualification__title">B.S. in Computer Science</h3>
-              <span class="qualification__subtitle">Oregon State University</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> June 2024
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- Ph.D. in AI (6th academic - even) -->
-        <div class="qualification__data" data-category="academic">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Started Ph.D. in AI</h3>
-              <span class="qualification__subtitle">Oregon State University</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> September 2024
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- Concurrent MSCS (7th academic - odd) -->
-        <div class="qualification__data" data-category="academic">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Added Concurrent M.S. in CS</h3>
-              <span class="qualification__subtitle">Oregon State University</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> April 2025
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- National Guard (1st professional - odd) -->
-        <div class="qualification__data" data-category="professional">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Enlisted as a Medic (68W)</h3>
-              <span class="qualification__subtitle">Ohio Army National Guard</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> July 2014
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- Private EMS (2nd professional - even) -->
-        <div class="qualification__data" data-category="professional">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Private EMS Companies</h3>
-              <span class="qualification__subtitle">Paramedic/EMT</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> 2016 – 2020
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- Cleveland Clinic (3rd professional - odd) -->
-        <div class="qualification__data" data-category="professional">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Medical Assistant</h3>
-              <span class="qualification__subtitle">Cleveland Clinic</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> June 2020 – Sep 2021
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- FEMA Contractor (4th professional - even) -->
-        <div class="qualification__data" data-category="professional">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Medic Contractor</h3>
-              <span class="qualification__subtitle">FEMA</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> Sep 2021 – Apr 2023
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- Undergraduate Research Assistant (5th professional - odd) -->
-        <div class="qualification__data" data-category="professional">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Undergraduate Research Assistant</h3>
-              <span class="qualification__subtitle">Oregon State University</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> August 2023 – April 2024
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- Project Assistant (6th professional - even) -->
-        <div class="qualification__data" data-category="professional">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Project Assistant</h3>
-              <span class="qualification__subtitle">Oregon State University</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> April 2024 – September 2024
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-
-        <!-- Graduate Research Assistant (7th professional - odd) -->
-        <div class="qualification__data" data-category="professional">
-          <div class="qualification__content">
-              <h3 class="qualification__title">Graduate Research Assistant</h3>
-              <span class="qualification__subtitle">Ramsey Lab, Oregon State University</span>
-              <div class="qualification__calendar">
-                <i class="uil uil-calendar-alt"></i> September 2024 – Present
-              </div>
-          </div>
-          <span class="qualification__rounder"></span>
-        </div>
-    </div>
-    </section>
-
-    <section class="publications-section" id="publications">
-        <h2><span>Publications</span></h2>
-
-        <div class="publication">
+        <ul class="pubs">
+          <li>
             <p>
-            <strong>F.M. Hodges</strong>, et al., 
-            “Using AI to Improve Diagnosis and Treatment of Rare Diseases: A Chat Agent for Equitable and Accessible Healthcare,” 
-            <em>Artificial Intelligence in Medicine (AIME)</em>, LNCS vol. 15735, Springer, 2025. 
-            <a href="https://doi.org/10.1007/978-3-031-95841-0_35" target="_blank" rel="noopener noreferrer">
-                doi:10.1007/978-3-031-95841-0_35
-            </a>
+              <strong>F.M. Hodges</strong> et&nbsp;al., &ldquo;Using AI to Improve Diagnosis and Treatment of Rare
+              Diseases: A Chat Agent for Equitable and Accessible Healthcare,&rdquo;
+              <em>Artificial Intelligence in Medicine (AIME)</em>, LNCS vol.&nbsp;15735, Springer, 2025.
+              <a href="https://doi.org/10.1007/978-3-031-95841-0_35" target="_blank" rel="noopener noreferrer">doi:10.1007/978-3-031-95841-0_35</a>
             </p>
-        </div>
-
-        <div class="publication">
+          </li>
+          <li>
             <p>
-            <strong>F.M. Hodges</strong>, et al., 
-            “White Paper on Radiant,” Oregon State University, 2025. 
-            <a href="https://radiant.rtx.ai/whitepaper" target="_blank" rel="noopener noreferrer">
-                radiant.rtx.ai/whitepaper
-            </a>
+              <strong>F.M. Hodges</strong> et&nbsp;al., &ldquo;White Paper on Radiant,&rdquo; Oregon State University, 2025.
+              <a href="https://radiant.rtx.ai/whitepaper" target="_blank" rel="noopener noreferrer">radiant.rtx.ai/whitepaper</a>
             </p>
-        </div>
-
-        <h2><span>Presentations</span></h2>
-
-        <div class="presentation">
+          </li>
+          <li>
             <p>
-            <strong>Poster Presentation:</strong> 
-            <em>Radiant: An Agentic RAG System for Rare Diseases.</em> 
-            Presented at Artificial Intelligence in Medicine, Pavia, Italy, 2025.
+              Poster &mdash; <em>Radiant: An Agentic RAG System for Rare Diseases.</em>
+              Artificial Intelligence in Medicine, Pavia, Italy, 2025.
             </p>
-        </div>
-
-        <div class="presentation">
+          </li>
+          <li>
             <p>
-            <strong>Demonstrative Presentation:</strong> 
-            <em>Radiant.</em> 
-            Presented at Stanford & Research to the People Rare Disease Hackathon, San Francisco, California, 2024.
+              Demo &mdash; <em>Radiant.</em> Stanford &amp; Research to the People Rare Disease
+              Hackathon, San Francisco, 2024.
             </p>
-        </div>
-    </section>
-
-
-    <!-- Projects Section -->
-    <section class="projects-section" id="projects">
-      <h2>My <span>Projects</span></h2>
-      <div class="projects-cards">
-
-        <div class="projects-card-box">
-          <div class="projects-card-box__icons"><i class="fa-solid fa-laptop-medical"></i></div>
-          <div class="projects-card-box__desc">
-            <h4>Radiant</h4>
-            <p>
-              A chat-agent prototype for rare disease knowledge discovery and clinical decision support,
-              integrating retrieval-augmented generation (RAG) with knowledge graph verification.
-            </p>
-          </div>
-          <div class="projects-card-box__buttons">
-            <button class="btn btn-dark-outlined">
-              <a href="https://radiant.rtx.ai" target="_blank">View <i class="fa-solid fa-external-link"></i></a>
-            </button>
-          </div>
-        </div>
-
-        <div class="projects-card-box">
-          <div class="projects-card-box__icons">
-            <i class="fa-solid fa-network-wired"></i>
-          </div>
-          <div class="projects-card-box__desc">
-            <h4>localBabel</h4>
-            <p>
-              Released a packaged module within stitch-proj responsible for mapping heterogeneous biomedical identifiers and categories into a consistent internal schema. It serves as a local semantic harmonization engine, enabling disparate data sources to interoperate through standardized concept resolution and structured transformations.
-            </p>
-          </div>
-          <div class="projects-card-box__buttons">
-            <button class="btn btn-dark-outlined">
-              <a href="https://github.com/Translator-CATRAX/stitch-proj" target="_blank">
-                View <i class="fa-solid fa-external-link"></i>
-              </a>
-            </button>
-          </div>
-        </div>
-
-        <div class="projects-card-box">
-          <div class="projects-card-box__icons">
-            <i class="fa-solid fa-heart-pulse"></i>
-          </div>
-          <div class="projects-card-box__desc">
-            <h4>RTX Uptime Monitor</h4>
-            <p>
-              Designed and deployed a lightweight uptime monitoring service for RTX endpoints that performs continuous health checks, tracks state transitions, and records latency metrics. Features a real-time dashboard, automated recovery detection, Slack alerting, and structured endpoint build metadata tracking for operational transparency.
-            </p>
-          </div>
-          <div class="projects-card-box__buttons">
-            <button class="btn btn-dark-outlined">
-              <a href="https://uptime.rtx.ai" target="_blank">
-                View <i class="fa-solid fa-external-link"></i>
-              </a>
-            </button>
-          </div>
-        </div>
-       
-
-        <div class="projects-card-box">
-          <div class="projects-card-box__icons">
-            <i class="fa-solid fa-database"></i>
-          </div>
-          <div class="projects-card-box__desc">
-            <h4>PloverDB</h4>
-            <p>
-              Maintainer of PloverDB, a high-performance graph query service powering RTX knowledge providers. Responsible for deployment pipelines, infrastructure reliability, build validation, and performance optimization to ensure stable, scalable biomedical knowledge graph access.
-            </p>
-          </div>
-          <div class="projects-card-box__buttons">
-            <button class="btn btn-dark-outlined">
-              <a href="https://github.com/RTXteam/PloverDB" target="_blank">
-                View <i class="fa-solid fa-external-link"></i>
-              </a>
-            </button>
-          </div>
-        </div>
-
-        <div class="projects-card-box">
-          <div class="projects-card-box__icons">
-            <i class="fa-solid fa-microscope"></i>
-          </div>
-          <div class="projects-card-box__desc">
-            <h4>RareTarget</h4>
-            <p>
-              A knowledge graph–driven framework for identifying intermediate molecular targets in rare diseases by modeling relationships between symptoms, genes, and therapeutic pathways. Combines graph analytics and machine learning to prioritize biologically plausible intervention points for downstream experimental validation.
-            </p>
-          </div>
-          <div class="projects-card-box__buttons">
-            <button class="btn btn-dark-outlined">
-              <a href="https://github.com/Translator-CATRAX/rare-target" target="_blank">
-                View <i class="fa-solid fa-external-link"></i>
-              </a>
-            </button>
-          </div>
-        </div>
-
-        <div class="projects-card-box">
-          <div class="projects-card-box__icons"><i class="fa-solid fa-brain"></i></div>
-          <div class="projects-card-box__desc">
-            <h4>Biomedical Query Graph Extractor</h4>
-            <p>
-              A research pipeline integrating NLP, NLI, and embedding models to translate natural-language biomedical queries into formal graph representations for retrieval and reasoning.
-            </p>
-          </div>
-          <div class="projects-card-box__buttons">
-            <button class="btn btn-dark-outlined">
-              <a href="https://github.com/hodgesf/natural-language-to-query-graph" target="_blank">View <i class="fa-solid fa-external-link"></i></a>
-            </button>
-          </div>
-        </div>
-
-        <div class="projects-card-box">
-          <div class="projects-card-box__icons"><i class="fa-solid fa-square-binary"></i></div>
-          <div class="projects-card-box__desc">
-            <h4>Node Embedder</h4>
-            <p>
-              A Python pipeline that iterates through biomedical knowledge graph nodes, extracts
-              entity descriptions, embeds them into a vector store, and enables semantic search
-              and analytics on biomedical relationships.
-            </p>
-          </div>
-          <div class="projects-card-box__buttons">
-            <button class="btn btn-dark-outlined">
-              <a href="https://github.com/Translator-CATRAX/node-embedder" target="_blank">View <i
-                  class="fa-solid fa-external-link"></i></a>
-            </button>
-          </div>
-        </div>
-
-        <div class="projects-card-box">
-          <div class="projects-card-box__icons"><i class="fa-solid fa-hexagon-nodes"></i></div>
-          <div class="projects-card-box__desc">
-            <h4>RTX-KG2</h4>
-            <p>
-              A large biomedical knowledge graph maintained by the Ramsey Lab. I assist in maintaining,
-              debugging, and improving the knowledge ingestion and reasoning pipelines.
-            </p>
-          </div>
-          <div class="projects-card-box__buttons">
-            <button class="btn btn-dark-outlined">
-              <a href="https://github.com/RTXteam/RTX" target="_blank">View <i
-                  class="fa-solid fa-external-link"></i></a>
-            </button>
-          </div>
-        </div>
-
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- Resume Section -->
-    <section class="resume-section" id="resume">
-      <h2>My <span>Resume</span></h2>
-      <p class="resume-intro">
-        You can preview my resume directly below or download a copy for your reference.
-      </p>
-      <div class="resume-container">
-        <iframe src="assets/resume/FrankHodgesResume.pdf?v=2" title="Frankie Hodges Resume" frameborder="0"></iframe>
-      </div>
-      <div class="resume-download">
-        <button class="btn btn-primary">
-          <a href="assets/resume/FrankHodgesResume.pdf?v=2" download>Download PDF</a>
-        </button>
+    <!-- ================= ABOUT ================= -->
+    <section class="section section-alt" id="about">
+      <div class="wrap about-grid">
+        <div class="about-photo">
+          <img src="assets/img/head_shot.jpeg" alt="Portrait of Frankie Hodges" loading="lazy">
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2 class="section-title">Both sides of the problem</h2>
+          <p>
+            I spent a decade in medicine before I ever trained a model: combat medic in
+            the Ohio Army National Guard, paramedic, medical assistant at the Cleveland
+            Clinic, medic contractor with FEMA. I went back for computer science because
+            I wanted to affect healthcare at a systems level &mdash; and I now work on machine
+            learning and biomedical knowledge graphs as a PhD researcher in the
+            <a href="https://lab.saramsey.org" target="_blank" rel="noopener noreferrer">Ramsey Lab</a>
+            at Oregon State University, with a concurrent M.S. in computer science.
+          </p>
+          <p>
+            That history shapes how I build. I&rsquo;ve been the person relying on the
+            protocol at 3&nbsp;a.m., so I care less about leaderboard scores than whether a
+            system can show its evidence, admit uncertainty, and fail safely.
+          </p>
+          <p class="about-aside">
+            Off the clock: cooking, my dog, and a Cleveland sports loyalty that no
+            amount of evidence has managed to correct.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-    <h2>Contact <span>Me!</span></h2>
-    <form action="https://formspree.io/f/mldognyw" method="POST">
-        <div><input type="text" name="name" placeholder="Full Name" required></div>
-        <div><input type="email" name="email" placeholder="Email" required></div>
-        <div><textarea name="message" placeholder="Type Message" rows="5" required></textarea></div>
-        <div><button type="submit" class="btn btn-primary">SEND MESSAGE</button></div>
-    </form>
-      <div class="contact__github">
-        <button class="btn">
-          <a href="https://github.com/hodgesf" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-        </button>
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Let&rsquo;s talk</h2>
+          <p>
+            I take a small number of consulting engagements alongside my PhD &mdash; scoped
+            builds, evaluations, and advisory. Tell me what you&rsquo;re working on and
+            I&rsquo;ll reply within two business days.
+          </p>
+          <ul class="contact-links">
+            <li><a href="https://www.linkedin.com/in/hodgesfm/" target="_blank" rel="noopener noreferrer">LinkedIn &nearr;</a></li>
+            <li><a href="https://github.com/hodgesf" target="_blank" rel="noopener noreferrer">GitHub &nearr;</a></li>
+            <li><a href="./assets/resume/FrankHodgesResume.pdf" download>Download CV &darr;</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/mldognyw" method="POST">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>What are you working on?</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-solid">Send message</button>
+        </form>
       </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>Copyright &copy; 2025 -
-      <a href="https://github.com/hodgesfm" target="_blank">Frankie Hodges</a> - All Rights Reserved.
-    </p>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>&copy; 2026 <a href="https://github.com/hodgesf" target="_blank" rel="noopener noreferrer">Frankie Hodges</a></p>
+      <p class="footer-note">Corvallis, Oregon &middot; working remotely</p>
+    </div>
   </footer>
 
-  <!-- JS -->
   <script src="./assets/js/script.js"></script>
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const header = document.querySelector('header');
-    const navLinks = document.querySelectorAll('header nav ul li a');
-
-    // toggle menu open/close
-    menuToggle.addEventListener('click', () => {
-        header.classList.toggle('active');
-    });
-
-    // close menu when a nav link is clicked
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-        header.classList.remove('active');
-        });
-    });
-
-    // Timeline filter toggle
-    const toggleFilters = document.querySelectorAll('.toggle-filter');
-    const container = document.querySelector('.qualification__container');
-
-    toggleFilters.forEach(filter => {
-      filter.addEventListener('click', () => {
-        // Remove active class from all filters
-        toggleFilters.forEach(f => f.classList.remove('active'));
-        
-        // Add active class to clicked filter
-        filter.classList.add('active');
-        
-        // Get filter type
-        const filterType = filter.getAttribute('data-filter');
-        
-        // Remove all filter classes
-        container.classList.remove('filter-academic', 'filter-professional');
-        
-        // Add appropriate filter class
-        container.classList.add(`filter-${filterType}`);
-      });
-    });
-
-    // Initialize with "academic" filter
-    window.addEventListener('load', () => {
-      container.classList.add('filter-academic');
-    });
-  </script>
-
 </body>
+
 </html>
