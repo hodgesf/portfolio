@@ -14,7 +14,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Frankie Hodges — Biomedical AI &amp; Knowledge Graph Consulting">
   <meta property="og:description"
-    content="I build biomedical AI that shows its work. Grounded LLM systems, evaluation &amp; safety engineering, and knowledge graph engineering — by a clinician-turned-AI-researcher.">
+    content="I build biomedical AI that shows its work. Grounded LLM systems, evaluation and safety engineering, knowledge graphs, and predictive deep learning, from a clinician turned AI researcher.">
   <meta property="og:url" content="https://hodgesf.github.io/portfolio/">
   <meta property="og:image" content="https://hodgesf.github.io/portfolio/assets/img/head_shot.jpeg">
   <meta name="twitter:card" content="summary">
@@ -28,7 +28,7 @@
     href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css?v=2">
 
   <script type="application/ld+json">
   {
@@ -81,10 +81,12 @@
           <p class="eyebrow">Biomedical AI &middot; Knowledge Graphs &middot; LLM Systems</p>
           <h1>I build biomedical AI<br>that <em>shows its work.</em></h1>
           <p class="hero-sub">
-            Knowledge-graph-grounded LLM systems for biotech and health-tech teams &mdash;
-            retrieval, evaluation, and safety engineering from someone who has worked both
-            sides: a decade in frontline medicine, now an AI PhD researcher building
-            reasoning systems for NIH&rsquo;s Biomedical Data Translator.
+            I build LLM and deep learning systems that teams can trust: grounded
+            retrieval, honest evaluation, and knowledge graphs that keep models
+            accountable. Biomedical data is my specialty, and the methods carry
+            anywhere. Before AI I spent a decade in frontline medicine. Today I&rsquo;m
+            an AI PhD researcher and a key maintainer of ARAX, a reasoning system in
+            NIH&rsquo;s Biomedical Data Translator.
           </p>
           <div class="hero-ctas">
             <a class="btn btn-solid" href="#contact">Start a conversation</a>
@@ -147,11 +149,11 @@
       <div class="wrap cred-row">
         <div class="cred-item">
           <strong>NCATS Translator</strong>
-          <span>Contributor, NIH&rsquo;s federated biomedical reasoning program</span>
+          <span>Key maintainer of ARAX, NIH&rsquo;s biomedical reasoning agent</span>
         </div>
         <div class="cred-item">
           <strong>AIME 2025</strong>
-          <span>Published, Springer LNCS &mdash; AI in Medicine</span>
+          <span>Published at Springer&rsquo;s AI in Medicine conference</span>
         </div>
         <div class="cred-item">
           <strong>Ramsey Lab, OSU</strong>
@@ -168,34 +170,48 @@
     <section class="section" id="services">
       <div class="wrap">
         <p class="eyebrow">Services</p>
-        <h2 class="section-title">Three ways I can help</h2>
+        <h2 class="section-title">What I do</h2>
 
         <div class="services-grid">
           <article class="service">
-            <h3>Grounded LLM systems</h3>
+            <h3>Grounded RAG &amp; LLM systems</h3>
             <p>
-              Retrieval-augmented and agentic systems over your biomedical data &mdash;
-              corpus ingest, hybrid retrieval, citation-grade answers, deployment.
-              Built to refuse when the evidence isn&rsquo;t there.
+              RAG pipelines and agents that cite their sources and refuse when the
+              evidence runs out. I build new systems end to end and integrate AI
+              into the workflows and tools you already have.
             </p>
           </article>
           <article class="service">
             <h3>LLM evaluation &amp; safety</h3>
             <p>
-              Eval harnesses, faithfulness gates, adversarial testing, and PHI
-              safeguards for systems you already run &mdash; with metrics you can put
-              in front of a review board.
+              Eval harnesses, faithfulness checks, adversarial testing, and data
+              safeguards for systems you already run. You get numbers you can
+              defend in a review.
             </p>
           </article>
           <article class="service">
             <h3>Knowledge graph engineering</h3>
             <p>
-              Ontology mapping, identifier normalization, graph ML, and query
-              services on multi-million-node biomedical graphs &mdash; the plumbing
-              that makes grounding possible.
+              Schema design, ontology mapping, identifier normalization, and graph
+              ML at the scale of millions of nodes. This is the plumbing that makes
+              grounding possible.
+            </p>
+          </article>
+          <article class="service">
+            <h3>Deep learning for prediction</h3>
+            <p>
+              Custom models for classification, ranking, and link prediction, built
+              with interpretability in mind. My research focus is models that can
+              show why they predicted what they did.
             </p>
           </article>
         </div>
+
+        <p class="services-aside">
+          I also take on technical writing, from whitepapers to developer
+          documentation. If your project sits near this list but not on it, ask anyway.
+        </p>
+        <a class="services-cta" href="./services.html">Engagement models and pricing &rarr;</a>
       </div>
     </section>
 
@@ -208,24 +224,25 @@
         <!-- Radiant -->
         <article class="case">
           <p class="case-role">Sole builder &middot; deployed on AWS &middot; published at AIME 2025</p>
-          <h3>Radiant &mdash; clinical evidence RAG for infectious disease</h3>
+          <h3>Radiant: clinical evidence RAG for infectious disease</h3>
           <p class="case-lede">
-            A decision-support assistant for licensed clinicians that answers dosing,
-            isolation, and treatment questions <strong>only</strong> from curated evidence &mdash;
-            verbatim span citations on every claim, and refusal when the corpus
-            doesn&rsquo;t cover the question.
+            A decision support assistant for licensed clinicians. It answers dosing,
+            isolation, and treatment questions <strong>only</strong> from curated
+            evidence. Every claim carries a verbatim citation, and when the corpus
+            doesn&rsquo;t cover a question it says so instead of guessing.
           </p>
           <div class="case-body">
             <div class="case-text">
               <p>
-                Built end-to-end: a ~562k-chunk corpus from PMC full text, CDC/WHO/IDSA
-                guidelines, and institutional SOPs behind a license gate; hybrid dense +
-                BM25 retrieval with reranking; a three-tier evidence hierarchy
-                (institutional &rarr; guideline &rarr; research) with explicit concordance
-                verdicts; span-level attribution via the Claude Citations API; and a PHI
-                guard that blocks identifiers <em>before</em> any LLM call. Deployed on AWS
-                behind auth with encrypted secrets, plus an adversarial test suite for
-                prompt injection and dangerous-dose bait.
+                I built it end to end. The corpus holds around 562k chunks from PMC
+                full text, CDC, WHO, and IDSA guidelines, and institutional SOPs
+                behind a license gate. Retrieval is hybrid dense plus BM25 with
+                reranking. A three-tier evidence hierarchy weighs institutional
+                guidance against national guidelines and research, with an explicit
+                verdict when sources disagree. A PHI guard blocks identifiers before
+                anything reaches an LLM. The system runs on AWS behind auth with
+                encrypted secrets, and an adversarial test suite covers prompt
+                injection and dangerous dose bait.
               </p>
             </div>
             <ul class="case-metrics">
@@ -245,22 +262,25 @@
 
         <!-- RTX / Generic Concepts -->
         <article class="case">
-          <p class="case-role">Contributor &middot; NIH NCATS Translator &middot; in production</p>
-          <h3>ARAX generic-concepts classifier &mdash; ML inside an NIH reasoning system</h3>
+          <p class="case-role">Key maintainer &middot; NIH NCATS Translator &middot; in production</p>
+          <h3>ARAX: machine learning inside an NIH reasoning system</h3>
           <p class="case-lede">
-            Overly generic nodes (&ldquo;protein&rdquo;, &ldquo;disease&rdquo;) were polluting multi-hop
-            reasoning paths in ARAX, the reasoning agent over the 7.5M-node RTX-KG2
-            knowledge graph &mdash; held back only by a hand-maintained blocklist. I replaced
-            it with a learned classifier.
+            I&rsquo;m a key maintainer of ARAX, the reasoning agent that plans
+            multi-hop queries over the 7.5M-node RTX-KG2 knowledge graph. One
+            long-standing weak point was overly generic nodes like
+            &ldquo;protein&rdquo; and &ldquo;disease&rdquo; polluting reasoning paths,
+            held back only by a hand-maintained blocklist. I replaced that blocklist
+            with a learned classifier.
           </p>
           <div class="case-body">
             <div class="case-text">
               <p>
-                Graph feature extraction and node embeddings over KG2 feed an
-                information-content regressor and an XGBoost classifier; an
-                LLM-in-the-loop active-learning loop on a self-hosted vLLM server grew
-                the labeled set from 11.5k to 127k nodes across four rounds. Validated
-                against the ARAX regression test suite before adoption.
+                The pipeline extracts graph features and node embeddings over KG2,
+                feeds an information content regressor, and trains an XGBoost
+                classifier on top. An LLM-in-the-loop active learning stage running
+                on a self-hosted vLLM server grew the labeled set from 11.5k to 127k
+                nodes over four rounds. Everything was validated against the ARAX
+                regression test suite before adoption.
               </p>
             </div>
             <ul class="case-metrics">
@@ -280,7 +300,7 @@
         <!-- CCLB -->
         <article class="case">
           <p class="case-role">Single-author research &middot; methodology</p>
-          <h3>CCLB &mdash; link prediction that is faithful by construction</h3>
+          <h3>CCLB: link prediction that is faithful by construction</h3>
           <p class="case-lede">
             When a model proposes a molecular mediator for wet-lab validation, a post-hoc
             explanation isn&rsquo;t good enough. CCLB trains a hard-gated edge selector
@@ -290,11 +310,11 @@
           <div class="case-body">
             <div class="case-text">
               <p>
-                Trained on the human subset of the Reasoner Drug Knowledge Graph
-                (856k entities, ~2.7M triples) on DGX H100 hardware. The architecture
-                satisfies all four of Azzolin et&nbsp;al.&rsquo;s (ICLR 2025) conditions for
-                self-interpretable graph models by construction &mdash; audited condition by
-                condition in the paper. Current work extends this line toward
+                Trained on the human subset of the Reasoner Drug Knowledge Graph,
+                856k entities and around 2.7M triples, on DGX H100 hardware. The
+                architecture meets all four of Azzolin et&nbsp;al.&rsquo;s (ICLR 2025)
+                conditions for self-interpretable graph models, audited condition by
+                condition in the paper. My current work extends this line toward
                 query-conditional faithfulness guarantees.
               </p>
             </div>
@@ -315,12 +335,12 @@
           <li>
             <a href="https://github.com/RTXteam/PloverDB" target="_blank" rel="noopener noreferrer">PloverDB</a>
             <span class="mw-role">Maintainer</span>
-            <span class="mw-desc">In-memory graph query service powering Translator knowledge providers &mdash; deployment pipelines, build validation, performance.</span>
+            <span class="mw-desc">In-memory graph query service powering Translator knowledge providers. I own deployment pipelines, build validation, and performance.</span>
           </li>
           <li>
             <a href="https://github.com/Translator-CATRAX/stitch-proj" target="_blank" rel="noopener noreferrer">localBabel</a>
             <span class="mw-role">Author</span>
-            <span class="mw-desc">Biomedical identifier &amp; category normalization into a local SQLite schema; tested, benchmarked, published to PyPI.</span>
+            <span class="mw-desc">Biomedical identifier and category normalization into a local SQLite schema. Tested, benchmarked, and published to PyPI.</span>
           </li>
           <li>
             <a href="https://uptime.rtx.ai" target="_blank" rel="noopener noreferrer">RTX Uptime Monitor</a>
@@ -395,9 +415,10 @@
           <p>
             I spent a decade in medicine before I ever trained a model: combat medic in
             the Ohio Army National Guard, paramedic, medical assistant at the Cleveland
-            Clinic, medic contractor with FEMA. I went back for computer science because
-            I wanted to affect healthcare at a systems level &mdash; and I now work on machine
-            learning and biomedical knowledge graphs as a PhD researcher in the
+            Clinic, medic contractor with FEMA. I went back to school for computer
+            science because I wanted to affect healthcare at a systems level. Now I
+            work on machine learning and biomedical knowledge graphs as a PhD
+            researcher in the
             <a href="https://lab.saramsey.org" target="_blank" rel="noopener noreferrer">Ramsey Lab</a>
             at Oregon State University, with a concurrent M.S. in computer science.
           </p>
@@ -421,11 +442,12 @@
           <p class="eyebrow">Contact</p>
           <h2 class="section-title">Let&rsquo;s talk</h2>
           <p>
-            I take a small number of consulting engagements alongside my PhD &mdash; scoped
-            builds, evaluations, and advisory. Tell me what you&rsquo;re working on and
-            I&rsquo;ll reply within two business days.
+            I take a small number of consulting engagements alongside my PhD: scoped
+            builds, evaluations, advisory, and technical writing. Tell me what
+            you&rsquo;re working on and I&rsquo;ll reply within two business days.
           </p>
           <ul class="contact-links">
+            <li><a href="./services.html">Services and pricing &rarr;</a></li>
             <li><a href="https://www.linkedin.com/in/hodgesfm/" target="_blank" rel="noopener noreferrer">LinkedIn &nearr;</a></li>
             <li><a href="https://github.com/hodgesf" target="_blank" rel="noopener noreferrer">GitHub &nearr;</a></li>
             <li><a href="./assets/resume/FrankHodgesResume.pdf" download>Download CV &darr;</a></li>

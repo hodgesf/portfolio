@@ -420,8 +420,28 @@ a:hover {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.4rem;
+}
+
+.services-aside {
+  margin-top: 1.8rem;
+  max-width: 42rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.services-cta {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.98rem;
+  text-decoration: none;
+}
+
+.services-cta:hover {
+  text-decoration: underline;
 }
 
 .service {
@@ -441,6 +461,49 @@ a:hover {
 .service p {
   font-size: 0.95rem;
   color: var(--muted);
+}
+
+/* ---------- services & pricing page ---------- */
+
+.page-intro {
+  max-width: 40rem;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+}
+
+.price {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--amber-ink);
+  margin-bottom: 0.7rem;
+}
+
+.steps {
+  max-width: 44rem;
+  padding-left: 1.3rem;
+  margin-bottom: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.steps li::marker {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--amber-ink);
+}
+
+.steps strong {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.avail-note {
+  max-width: 42rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
 }
 
 /* ---------- case studies ---------- */
